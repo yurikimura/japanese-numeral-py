@@ -1,4 +1,4 @@
-こちらのライブラリのpythonバージョン（非公式）です。
+こちらのライブラリのpythonバージョン（非公式）です。  
 https://github.com/geolonia/japanese-numeral 
 
 Converts Japanese Kanji numeral <=> number.
