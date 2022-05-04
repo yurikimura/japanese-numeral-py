@@ -5,9 +5,8 @@ Converts Japanese Kanji numeral <=> number.
 
 ## Installation
 
-comming soon...
-
 ```bash
+ pip install git+https://github.com/yurikimura/japanese-numeral-py.git
 ```
 
 ## Usage
@@ -57,7 +56,7 @@ findKanjiNumbers('わたしは1億2000万円もっています。') # [ '1億200
 ```python
 from JapaneseNumeric import kanji2int
 
-findKanjiNumbers('今日は二千二十年十一月二十日です。') # '今日は2020年11月20日です。'
+kanji2int('今日は二千二十年十一月二十日です。') # '今日は2020年11月20日です。'
 ```
 
 ## License
