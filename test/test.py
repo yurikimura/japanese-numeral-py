@@ -1,5 +1,4 @@
-from index import *
-from utils import *
+from JapaneseNumeric import *
 
 
 def test_n2kan():
