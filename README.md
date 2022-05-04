@@ -57,6 +57,7 @@ findKanjiNumbers('わたしは1億2000万円もっています。') # [ '1億200
 from JapaneseNumeric import kanji2int
 
 kanji2int('今日は二千二十年十一月二十日です。') # '今日は2020年11月20日です。'
+kanji2int('私は、壱阡陌拾壱兆壱億壱萬円持っています。') # '私は、1111000100010000円持っています。'
 ```
 
 ## License
