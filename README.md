@@ -1,4 +1,5 @@
-informal version of https://github.com/geolonia/japanese-numeral 
+こちらのライブラリのpythonバージョン（非公式）です。  
+https://github.com/geolonia/japanese-numeral 
 
 Converts Japanese Kanji numeral <=> number.
 
@@ -16,7 +17,7 @@ comming soon...
 Converts Japanese Kanji numeral to number.
 
 ```python
-import kanji2number from index
+from JapaneseNumeric import kanji2number
 
 kanji2number('一千百十一兆一千百十一億一千百十一万一千百十一') # 1111111111111111
 
@@ -36,7 +37,7 @@ kanji2number('２億３千４５６万７８９０') # 234567890 （数字は全
 Converts number to Japanese Kanji numeral.
 
 ```python
-import number2kanji from index
+from JapaneseNumeric import number2kanji
 
 number2kanji(1111111111111111) # 千百十一兆千百十一億千百十一万千百十一
 ```
@@ -46,13 +47,17 @@ number2kanji(1111111111111111) # 千百十一兆千百十一億千百十一万�
 Finds the Japanese numeral numbers as an array.
 
 ```python
-import { findKanjiNumbers } from '@geolonia/japanese-numeral'
+from JapaneseNumeric import findKanjiNumbers
 
 findKanjiNumbers('今日は二千二十年十一月二十日です。') # [ '二千二十', '十一', '二十' ]
-findKanjiNumbers('今日は二〇二〇年十一月二十日です。') # [ '二〇二〇', '十一', '二十' ]
 findKanjiNumbers('わたしは二千二十億円もっています。') # [ '二千二十億' ]
-findKanjiNumbers('わたしは二〇二〇億円もっています。') # [ '二〇二〇億' ]
 findKanjiNumbers('わたしは1億2000万円もっています。') # [ '1億2000万' ]
+```
+
+```python
+from JapaneseNumeric import kanji2int
+
+findKanjiNumbers('今日は二千二十年十一月二十日です。') # '今日は2020年11月20日です。'
 ```
 
 ## License
